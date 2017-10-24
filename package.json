@@ -1,0 +1,29 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "description": "this is your first project",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "mocha -w"
+  },
+  "keywords": [
+    "javascript",
+    "oop",
+    "classes",
+    "es6",
+    "model"
+  ],
+  "author": "GA Credentials",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:wdi-nyc/project-1.git"
+  }
+}

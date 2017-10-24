@@ -1,0 +1,77 @@
+body {
+  background:#5e0c63 url("../images/stars_wht_med.png")no-repeat top center;
+}
+#splash{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10em;
+}
+.landingTitle{
+  width: 40%;
+  /*border: 1px solid black;*/
+}
+.landingForm{
+  width: 60%;
+  /*border: 1px solid black;*/
+}
+h1{
+  text-align: right;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 3.6em;
+}
+p {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding-left: 9em;
+}
+form {
+  margin: 0 auto;
+  width: 70%;
+  padding: 2em 0 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.control-group {
+  /*margin-top: 1em;*/
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 160px;
+  margin-right: .5em;
+  text-align: right;
+  font: 1.2em serif;
+  font-weight: 700;
+}
+
+input, textarea {
+  font: 1.2em sans-serif;
+  padding: .4em .8em;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: .2em;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+button {
+  margin-left: 9em;
+  font: 1.2em sans-serif;
+  padding: 8px;
+}
+button a {
+  text-decoration: none;
+}
+fieldset{
+  border: 0px;
+}
