@@ -1,0 +1,224 @@
+
+@media only screen
+  and (max-width: 1200px)
+  and (orientation: landscape) {
+
+    header {
+      font-size: 2em;
+      margin-top: 0em;
+    }
+
+}
+
+
+@media only screen
+  and (max-width: 991px){
+
+    article{
+      width: 100%;
+    }
+
+    header {
+      line-height: 1.8em;
+      font-size: 2.3em;
+      margin: 1em auto 0;
+    }
+
+    .cellbutton{
+      width: 20%;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+       border-radius: 15px;
+      }
+
+    .push_button {
+      font-size: 1.6em;
+      line-height: 6em;
+
+    }
+}
+
+
+/*Tablet Portrait*/
+@media only screen
+  and (max-width: 990px)
+  and (orientation: portrait) {
+
+   .slotContainer{
+     /*width: 100%;*/
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     margin: 0 auto;
+   }
+
+   header {
+    font-size: 2em;
+  }
+
+    .slot{
+     width: 98%;
+     margin: 0 auto;
+
+   }
+
+    .cell1, .cell2, .cell3{
+      width: 30%;
+      border-radius: 15px;
+    }
+
+    .cellbutton{
+       width: 85%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+
+       margin: 1em auto 0;
+     }
+
+     .push_button {
+
+        /*font-size: 2.2em;*/
+        width: 30%;
+        height: 3.6em;
+        line-height: 3.6em;
+        margin: .5em 0 .75em;
+      }
+
+      #display-msg{
+        width: 100%;
+        margin: 1.5em auto 0;
+        padding-bottom: 2em;
+        font-size: .75em;
+      }
+}
+
+
+
+
+
+/*Mobile Portrait*/
+@media only screen
+  and (max-width: 414px)
+  and (orientation: portrait){
+
+  body {
+    background-color: #fbb957;
+    background-image: none;
+
+  }
+
+  #wrapper{
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  article{
+    width: 100%;
+    box-shadow:none;
+    border-radius: 0;
+    margin:0;
+    padding-top:5.5em;
+  }
+
+    header {
+      position: absolute;
+      font-size: 1.2em;
+      margin-top: 0;
+      margin-left: -8px;
+      padding:5px;
+      width: 100%;
+    }
+
+    header h1{
+      color: #fff;
+    }
+
+    .slotContainer{
+      width: 100%;
+      margin-left:-3px;
+      padding:0;
+    }
+
+    .cell1, .cell2, .cell3{
+      width: 33%;
+      margin:.3em;
+    }
+
+    #display-msg{
+      margin: 0em auto 0;
+      padding-bottom: .5em;
+      font-size: .5em;
+    }
+
+    .push_button {
+      width: 40%;
+      height: 2.6em;
+      line-height: 2.6em;
+    }
+
+  }
+
+
+  /*Mobile Landscape*/
+  @media only screen
+    and (max-width: 736px)
+    and (orientation: landscape){
+
+    body {
+      background-color: #fbb957;
+      background-image: none;
+    }
+
+    #wrapper{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+
+    article{
+      width: 100%;
+      box-shadow:none;
+      border-radius: 0;
+      margin:0;
+      padding-top:.0;
+    }
+
+      header {
+        display: none;
+      }
+
+      .slotContainer{
+        width: 100%;
+
+
+        margin: 0;
+        padding:0;
+        justify-content: space-between;
+      }
+
+      .cellslots{
+        margin: 0;
+        padding:10px;
+      }
+
+
+      #display-msg{
+        font-size: .5em;
+        padding-bottom: 0;
+
+      }
+
+      .push_button {
+        width: 60%;
+        height: 2.6em;
+        line-height: 3em;
+
+      }
+
+    }
+
+
+
+

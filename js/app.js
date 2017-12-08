@@ -3,7 +3,7 @@ const $els = {
   cell2: document.querySelector('.cell2'),
   cell3: document.querySelector('.cell3'),
   startBtn: document.querySelector('#startbtn'),
-  resetBtn: document.querySelector('#resetbtn'),
+  stopbtn: document.querySelector('#stopbtn'),
   stopBtn: document.querySelector('.stopBtn')
 };
 
@@ -42,14 +42,14 @@ function startGame(){
     ($textMsg).html('Test Your Luck').css({"color": "black"});
   }
   let sI = setInterval(changeImage, 100);
-  $els.resetBtn.addEventListener("click", function(){
+  $els.stopbtn.addEventListener("click", function(){
    clearInterval(sI)
   });
   gamebButton = false;
 };
 
 //stops images and check for matches
- $els.resetBtn.addEventListener("click", function(){
+ $els.stopbtn.addEventListener("click", function(){
   match();
  });
 
@@ -59,9 +59,9 @@ function match(){
   }else if ($els.cell1.innerHTML == $els.cell2.innerHTML ||
             $els.cell1.innerHTML == $els.cell3.innerHTML ||
             $els.cell2.innerHTML == $els.cell3.innerHTML){
-    ($textMsg).html('You have a Match!').css({"color": "red", "font-size": "36px"});
+    ($textMsg).html('You have a Match!').css({"color": "red", "font-size": "2em"});
   }else {
-    ($textMsg).html('No match, try again!').css({"color": "red", "font-size": "36px"});
+    ($textMsg).html('No match, try again!').css({"color": "red", "font-size": "2em"});
   }
 
 }

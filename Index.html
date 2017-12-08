@@ -2,49 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome</title>
-  <link rel='stylesheet' type='text/css' href='css/styles_landing.css'>
+  <title>Slot Machine</title>
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+  <link rel='stylesheet' type='text/css' href='css/style_responsive.css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Cousine:700" rel="stylesheet">
 
 </head>
 <body>
-<div id="splash">
-  <div class="landingTitle">
-    <h1>Welcome, <br/>Players!</h1>
-  </div>
-    <div class= "landingForm" action="">
-      <form class="landingform">
-        <p>Please fill out the following..</p>
-        <fieldset>
-            <div class="control-group">
-                <label for="name">Name:</label>
-                <input id="name" type="text" placeholder="Required field">
+  <div id="wrapper">
+    <header>
+      <h1>Slot Machine</h1>
+    </header>
+    <article>
+      <div class="slotContainer">
+        <!-- slot -->
+        <div class= "slot">
+          <div class= "cellslots">
+            <div class= "cell1">
+              <img class="slotImage" src="images/art_lemon.png" >
             </div>
-
-            <div class="control-group">
-                <label for="email">Email Address:</label>
-                <input id="email" type="email" placeholder="Email Address">
+            <div class= "cell2">
+              <img class="slotImage" src="images/art_star.png">
             </div>
-
-            <div class="control-group">
-                <label for="birthday">Date Of Birth:</label>
-                <input id="birthday" type="birthday" placeholder="Must be over 21 to play">
+            <div class= "cell3">
+              <img class="slotImage" src="images/art_777.png">
             </div>
-
-
-            <div class="control-group">
-                <label for="credit">Credit Card:</label>
-                <input id="foo" type="text" placeholder="Credit Card">
-            </div>
-
-            <div class="control-group">
-                <button type="submit" class="submitBtn"><a href="home.html">Submit</a></button>
-                <!-- <button type="submit" id="submitBtn">Submit</a></button> -->
-            </div>
-        </fieldset>
-      </form>
-    </div>
+          </div>
+          <div id="display-msg">
+            <h1 class="textMsg">Play To Win!!!</h1>
+          </div>
+        </div>
+        <!-- bottons -->
+        <div class="cellbutton">
+          <a href="#" id="startbtn" class="push_button red">Start</a>
+          <a href="#" id="stopbtn" class="push_button blue">Stop</a>
+        </div>
+      </div><!-- end slotContainer -->
+    </article>
   </div>
   <script src='js/app.js'></script>
 </body>
